@@ -128,7 +128,7 @@ section {
 	line-height: 19px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #34280E;
+	color: #ca420c;
 	height: 85px;
 	display: flex;
 	flex-wrap: wrap;
@@ -187,6 +187,39 @@ header {
 	left: 7px;
   } */
 
+/* main */
+
+  .main_tit{
+	color: #343c4e;
+    font-size: 54px;
+    font-family: 'Ping',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+	text-align: center;
+	align-items: center;
+}
+/* .head_logo {
+	position: absolute;
+	top: 11px;
+	left: -30px;
+	transition: all 200ms ease;
+	transition: 0.5s;
+  }
+  
+  .head_logo:hover{
+	left: 7px;
+  } */
+
+.main{
+	background-color: #f1c513;
+}
+.main_img img{
+	max-width: 500px;
+}
+
 .menu a {
 	padding: 4px 16px;
 	margin-right: 8px;
@@ -200,7 +233,7 @@ header {
 }
 
 .main_btn {
-	border-radius: 118px;
+	border-radius: 30px;
 	border: 2px solid #2c2f24;
 	transition: 0.3s;
 	color: #182226;
@@ -214,11 +247,15 @@ header {
 	box-shadow: none;
 	width: 170px;
 	padding: 0px 5px;
+	text-align: center;
 }
  .main_btn:hover {
 	background: #aca078;
 	transform: scale(1.1);
 }
+
+/* plus */
+
 .plus_tit {
 	overflow: hidden;
 	text-align: center;
@@ -303,6 +340,104 @@ header {
 .plus_card_port:hover{
 	transform: scale(1.1);
 }
+
+/* advan */
+.advan_cards{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+
+}
+
+.advan_card {
+	background: #fff;
+	padding: 90px 80px 90px 40px;
+	border: 0px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	border-radius: 25px;
+	transition: 0.5s;
+}
+.advan_card_1 .advan_ic{
+	background-image: url(../img/icons/box_advan.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.advan_card_2 .advan_ic{
+	background-image: url(../img/icons/money_advan.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.advan_card_3 .advan_ic{
+	background-image: url(../img/icons/time_advan.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.advan_card_4 .advan_ic{
+	background-image: url(../img/icons/lightning_advan.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.advan_card_5 .advan_ic{
+	background-image: url(../img/icons/security_advan.png);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.advan_ic {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: block;
+	background: #fdc10b;
+	margin: 0 auto 15px;
+
+}
+.advan_text{
+	text-align: center;
+	width: 180px;
+}
+
+/* swiper */
+.swiper {
+	width: 1000px;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+	right: 140px !important;
+	left: auto;
+	color: #000;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+	left: 140px !important;
+	right: auto;
+	color: #000;
+} 
+/* costumers */
+
 .costumers {
 	background: #f9f9f7;
 }
@@ -366,6 +501,8 @@ header {
 .sec_tit {
 	margin-bottom: 20PX;
 }
+
+/* acor-container  */
 
 .acor-container {
 	margin: 20px 0;
