@@ -343,15 +343,16 @@ header {
 
 /* advan */
 .advan_cards{
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
+
+	padding-top: 50px;
 
 }
-
+.advan{
+	padding: 0;
+}
 .advan_card {
 	background: #fff;
-	padding: 90px 80px 90px 40px;
+	padding: 20px;
 	border: 0px solid rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
 	border-radius: 25px;
@@ -588,3 +589,51 @@ background: #ffc343;
 	font-style: 12px;
 }
 
+
+/* footer */
+footer{
+	background: #3b3b3b;
+	height: 360px;
+}
+.footer_tit{
+	color: #fdc10b;
+
+}
+.footer_up {
+	/* padding: 20px 0; */
+	align-items: center;
+	margin: 0 auto;
+	align-items: center;
+	text-align: center;
+}
+.footer_logo img {
+	max-width: 250px;
+	max-height: 200px;
+}
+/* .footer_ic{
+background: url(../img/icons/footer_call.png);
+width: 50%;
+background: #fdc10b;
+}
+.footer_ic{
+background: url(./img/icons/footer_sms.png);
+
+}
+.footer_ic{
+background: url(/img/icons/footer_tg.png);
+} */
+.footer_ic{
+	width: 150px;
+	height: 150px;
+	color: #000;
+	border-radius: 50%;
+    display: block;
+    background-image: url(../img/icons/footer_call.SVG);
+	background-size: 30px ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer_ic :nth-child(2){
+	background: url(./img/icons/footer_sms.png);
+	
+	}
