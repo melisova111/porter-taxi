@@ -45,6 +45,16 @@
 	.plus_tit{
 		margin-bottom: 20px;
 	}
+	.advan_card{
+		padding: 2px;
+	}
+	.services_cards{
+		justify-content: center;
+		gap: 25px;
+	}
+	.wrap{
+		justify-content: center;
+	}
 }
 @media screen and (max-width: 990px) {
 	.container{
@@ -53,10 +63,23 @@
 	.costumer_card{
 		max-width: 230px;
 	}
+	
 }
 @media screen and (max-width: 780px) {
 	.container{
 		max-width: 510px;
+	}
+	body{
+		font-size: 14px;
+	}
+	.main_tit{
+		font-size: 35px;
+	}
+	.plus_tit{
+		font-size: 25px;
+	}
+	.sec_tit{
+		font-size: 30px;
 	}
 	.costumer_cards{
 		justify-content: center;
@@ -65,10 +88,31 @@
 		max-width: 350px;
 		margin-bottom: 30px;
 	}
+	.services_cards{
+		justify-content: center;
+	}
 }
 @media screen and (max-width: 540px) {
 	.container{
 		max-width: 420px;
+	}
+
+	.advan_cards {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.advan_card {
+		margin-bottom: 30px;
+	}
+
+	.advan_ic {
+		max-width: 160px;
+		height: 160px;
+	}
+
+	.advan_text {
+		font-size: 18px;
 	}
 }
 @media screen and (max-width: 450px) {

@@ -1,45 +1,24 @@
-// // slider
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView:3,
-//     spaceBetween: 30,
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//     },
-//     mousewheel: true,
-//     keyboard: true,
-// });
+// {/* <script>
+// // Get the video
+// var video = document.getElementById("myVideo");
 
-// swiper.slideNext();
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView:1,
-//     spaceBetween: 30,
-//     breakpoints:{
-//         320:{
-//             slidesPerView:2,
-//             spaceBetween: 20,
-//         },
-//         480:{
-//             slidesPerView:3,
-//             spaceBetween: 30,
-//         },  
-//         640:{
-//             slidesPerView:4,
-//             spaceBetween: 40,
-//         },
-//     },
-//     navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//     },
-//     mousewheel: true,
-//     keyboard: true,
-// });
-  
-  
+// // Get the button
+// var btn = document.getElementById("myBtn");
+
+// // Pause and play the video, and change the button text
+// function myFunction() {
+//     if (video.paused) {
+//         video.play();
+//         btn.innerHTML = "Pause";
+//     } else {
+//         video.pause();
+//         btn.innerHTML = "Play";
+//     }
+// }
+// </script> */}
+const images = document.querySelectorAll('.main_img');
+
+
+window.addEventListener('scroll', () => {
+    images.style.right = "-" + (window.scrollX / 1.5) + "px";
+})
