@@ -30,7 +30,7 @@ ul li:last-child {
 
 img {
 	display: block;
-	width: 100%;
+	/* width: 100%; */
 	height: auto;
 }
 
@@ -160,110 +160,115 @@ section {
 /* burger */
 
 .menu {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
+.menu>li {
+	margin: 0 1rem;
+	overflow: hidden;
 }
 
 .menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: none;
+	height: 100%;
+	width: 30px;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #menu-toggle {
-  display: none;
+	display: none;
 }
 
 .menu-button,
 .menu-button::before,
 .menu-button::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
+	display: block;
+	background-color: #fff;
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	border-radius: 2px;
 }
 
 .menu-button::before {
-  content: '';
-  margin-top: -8px;
+	content: '';
+	margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
-  margin-top: 8px;
+	content: '';
+	margin-top: 8px;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+	margin-top: 0px;
+	transform: rotate(405deg);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: #f1c513;
+#menu-toggle:checked+.menu-button-container .menu-button {
+	background: #f1c513;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+	margin-top: 0px;
+	transform: rotate(-405deg);
 }
 
 @media (max-width: 1100px) {
-  .menu-button-container {
-    display: flex;
-  }
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 61px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid #f1c513;
-    height: 2.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0.5em;
-    width: 100%;
-    color: white;
-    background-color: #222;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #f1c513;
-  }
+	.menu-button-container {
+		display: flex;
+	}
 
-  .menu li a {
-	color: white;
-  }
+	.menu {
+		position: absolute;
+		top: 0;
+		margin-top: 61px;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#menu-toggle~.menu li {
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	#menu-toggle:checked~.menu li {
+		border: 1px solid #f1c513;
+		height: 2.5em;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.menu>li {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 0.5em 0.5em;
+		width: 100%;
+		color: white;
+		background-color: #222;
+	}
+
+	.menu>li:not(:last-child) {
+		border-bottom: 1px solid #f1c513;
+	}
+
+	.menu li a {
+		color: white;
+	}
 }
 
 /* header */
@@ -315,6 +320,7 @@ li a:focus:after {
 	width: 100%;
 	/*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
+
 /* main  */
 .sec_tit {
 	/* padding: 80px 0 15px 0px; */
@@ -483,6 +489,10 @@ li a:focus:after {
 .plus_left {
 	flex: 40%;
 	margin-right: 50px;
+}
+
+.plus_img {
+	width: 100%;
 }
 
 .plus_card_port {
@@ -676,9 +686,10 @@ li a:focus:after {
 	border-radius: 25px;
 	transition: 0.5s;
 }
-.advan_card:hover{
-box-shadow: rgb(255, 170, 0);
-transform: scale(1.2);
+
+.advan_card:hover {
+	box-shadow: rgb(255, 170, 0);
+	transform: scale(1.2);
 }
 
 .advan_card_1 .advan_ic {
@@ -792,6 +803,7 @@ transform: scale(1.2);
 .ser_img_hover:hover .middle {
 	opacity: 1;
 }
+
 /* footer */
 footer {
 	background: #3b3b3b;
@@ -812,7 +824,7 @@ footer {
 .footer_logo img {
 	max-width: 200px;
 	max-height: 150px;
-	
+
 }
 
 /* .footer_ic{
@@ -862,6 +874,7 @@ background: url(/img/icons/footer_tg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
 .footer_ic :nth-child(5) {
 	background: url(../img/icons/footer_instagram.svg);
 	background-repeat: no-repeat;
@@ -876,26 +889,86 @@ background: url(/img/icons/footer_tg.png);
 	letter-spacing: calc(var(--index) / 37.5);
 }
 
-.footer_number{
+.footer_number {
 	display: flex;
 	flex-direction: column;
 	line-height: 50px;
 	margin-bottom: 50px;
 
 }
-.footer_num{
+
+.footer_num {
 	width: 18px;
 	transition: .5s;
 }
-.footer_num:hover{
+
+.footer_num:hover {
 	color: #fdc10b;
 }
 
-.footer_left{display: flex;
-	justify-content: flex-start;	
+.footer_left {
+	display: flex;
+	justify-content: flex-start;
 }
 
-.footer_text{
+.footer_text {
 	width: 200px;
 	height: 200px;
+}
+
+
+
+/* slider */
+.slider-container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+flex-wrap: nowrap;
+
+}
+
+.slide img {
+width: 400px;
+border-radius: 20px;
+margin-right: 20px;
+flex: 0 0 300px;
+}
+
+button {
+	cursor: pointer;
+	top: 50%;
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	border: none;
+	font-size: 80px;
+	color: rgb(239, 185, 68);
+	transform: translateY(-380%);
+	display: flex;
+	justify-content: space-between;
+}
+button:hover{
+	color: #6d4301 ;
+}
+
+#prev {
+	left: 100px;
+	font-size: 60px;
+
+}
+
+#next {
+	right: 100px;
+	font-size: 60px;
+
+}
+
+.btns {
+	display: flex;
+	justify-content: space-between;
 }
