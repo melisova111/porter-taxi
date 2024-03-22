@@ -996,7 +996,6 @@ footer {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
 	flex-wrap: nowrap;
-
 }
 
 .slide img {
