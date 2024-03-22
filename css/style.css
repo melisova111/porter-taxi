@@ -263,71 +263,72 @@ li a:after {
 
 	.header_btn {
 		display: none;
-	}}
-
-	
-
-
-	.menu {
-		position: absolute;
-		top: 0;
-		margin-top: 61px;
-		left: 0;
-		flex-direction: column;
-		width: 100%;
-		justify-content: center;
-		align-items: center;
 	}
+}
 
-	#menu-toggle~.menu li {
-		height: 0;
-		margin: 0;
-		padding: 0;
-		border: 0;
-		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-	}
 
-	#menu-toggle:checked~.menu li {
-		border: 1px solid #f1c513;
-		height: 2.5em;
-		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 
-	}
 
-	.menu>li {
-		display: flex;
-		justify-content: center;
-		margin: 0;
-		padding: 0.5em 0.5em;
-		width: 100%;
-		color: white;
-		background-color: #222;
-	}
+.menu {
+	position: absolute;
+	top: 0;
+	margin-top: 61px;
+	left: 0;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
 
-	.menu>li:not(:last-child) {
-		border-bottom: 1px solid #f1c513;
-	}
+#menu-toggle~.menu li {
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
 
-	.menu li a {
-		color: #f1c513;
-	}
+#menu-toggle:checked~.menu li {
+	border: 1px solid #f1c513;
+	height: 2.5em;
+	transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 
-	.menu li a {
-		position: relative;
-		color: #f1c513;
-		/*задаём цвет ссылки*/
-		cursor: pointer;
-		line-height: 1;
-		/*задаём высоту строки*/
-		text-decoration: none;
-		/*убираем подчёркивание*/
+}
 
-	}
+.menu>li {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0.5em 0.5em;
+	width: 100%;
+	color: white;
+	background-color: #222;
+}
 
-	li a:after {
-		background-color: #f1c513;
-		height: 1.5px;
-	}
+.menu>li:not(:last-child) {
+	border-bottom: 1px solid #f1c513;
+}
+
+.menu li a {
+	color: #f1c513;
+}
+
+.menu li a {
+	position: relative;
+	color: #f1c513;
+	/*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1;
+	/*задаём высоту строки*/
+	text-decoration: none;
+	/*убираем подчёркивание*/
+
+}
+
+li a:after {
+	background-color: #f1c513;
+	height: 1.5px;
+}
 
 
 /* header */
@@ -889,37 +890,37 @@ li a:focus:after {
 footer {
 	background: #3b3b3b;
 	/* height: 360px; */
-  }
-  
-  .footer_tit {
+}
+
+.footer_tit {
 	color: #fdc10b;
-  }
-  
-  .footer_up {
+}
+
+.footer_up {
 	/* padding: 20px 0; */
 	text-align: center;
 	flex-direction: column;
 	margin: 0;
-  }
-  
-  .footer_logo img {
+}
+
+.footer_logo img {
 	max-width: 125px;
 	max-height: 125px;
-  
-  }
-  
-  /* .footer_icons{
+
+}
+
+/* .footer_icons{
 	padding-bottom: 30px;
 	max-width: 400px;
 	
   } */
-  .footer_icons {
+.footer_icons {
 	padding-bottom: 30px;
 	justify-content: center;
 	gap: 30px;
-  }
-  
-  .footer_ic {
+}
+
+.footer_ic {
 	width: 40px;
 	height: 40px;
 	color: #000;
@@ -928,67 +929,68 @@ footer {
 	border-radius: 10px;
 	background-color: #f1c513;
 	transition: 0.5s;
-  }
-  
+}
 
-  .footer_first_ic {
+
+.footer_first_ic {
 	background-image: url(../img/icons/footer_call.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
-  }
-  
-  .footer_second_ic {
+}
+
+.footer_second_ic {
 	background-image: url(../img/icons/footer_tg.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
-  }
-  
-  .footer_third_ic {
+}
+
+.footer_third_ic {
 	background-image: url(../img/icons/footer_instagram.svg);
 	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: center;
-  }
+}
 
-  .footer_four_ic{
+.footer_four_ic {
 	background: url(/img/icons/footer_whatsapp.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #f1c513;
-	}
+}
 
 
-  .footer_ic:hover {
+.footer_ic:hover {
 	background-color: #000;
-  }
-  
-  .footer_second_ic:hover {
+}
+
+.footer_second_ic:hover {
 	background-image: url(../img/icons/footer_tg-yellow.svg);
 	background-size: 22px;
-  }
-  
-  .footer_first_ic:hover {
+}
+
+.footer_first_ic:hover {
 	background-image: url(../img/icons/footer_call-yellow.svg);
 	background-size: 25px;
-  }
-  
-  .footer_third_ic:hover {
+}
+
+.footer_third_ic:hover {
 	background-image: url(../img/icons/footer_insta-yellow.svg);
 	background-size: 25px;
 	background-repeat: no-repeat;
 	background-position: center;
-  }
+}
 
-.footer_four_ic:hover{
+.footer_four_ic:hover {
 	background: url(../img/icons/footer_what-yellow.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #000;
-	}
+}
+
 /* gallery */
 
 .slider {
@@ -1000,4 +1002,3 @@ footer {
 .slide img {
 	flex: 0 0 300px;
 }
-
