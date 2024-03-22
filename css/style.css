@@ -566,14 +566,12 @@ li a:focus:after {
 	background-position: center;
 }
 
-
 .costumer_card__2 .costumer_ic {
 	background-image: url(../img/icons/service_ic2.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
 
 .costumer_card__3 .costumer_ic {
 	background-image: url(../img/icons/service_ic3.jpg);
