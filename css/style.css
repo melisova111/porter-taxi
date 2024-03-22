@@ -346,9 +346,6 @@ header {
 	max-height: 100px;
 }
 
-
-
-
 li a:hover:after,
 li a:focus:after {
 	width: 100%;
