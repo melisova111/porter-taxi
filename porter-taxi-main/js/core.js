@@ -17,6 +17,10 @@
 //     }
 // }
 // </script> */}
+
+
+
+
 const images = document.querySelectorAll('.main_img');
 
 
@@ -37,39 +41,35 @@ for (let smoothLink of smoothLinks) {
     });
 };
 
-// let currentIndex = 0;
-//   const slides = document.querySelectorAll('.slide');
-//   const totalSlides = slides.length;
-
-
-//   function showSlide(index) {
-//     if (index < 0) {
-//       currentIndex = totalSlides - 1;
-//     } else if (index >= totalSlides) {
-//       currentIndex = 0;
-//     } else {
-//       currentIndex = index;
-//     }
-
-//     const transformValue = -currentIndex * 30 + '%';
-//     document.querySelector('.slider').style.transform = 'translateX(' + transformValue + ')';
-//   }
-
-//   function prevSlide() {
-//     showSlide(currentIndex - 1);
-//   }
-
-//   function nextSlide() {
-//     showSlide(currentIndex + 1);
-//   }
-
-
-
-$('.your-class').slick({
+  $('.your-class').slick({
     dots: true,
+    infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 2000,
-});
-
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 1500,
+        }
+      }
+    ]
+  })

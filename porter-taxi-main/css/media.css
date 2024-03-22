@@ -1,189 +1,113 @@
 @media screen and (max-width: 1300px) {
-	.container {
+	.container{
 		max-width: 960px;
 	}
-
-	.main_tit {
+	.main_tit{
 		align-items: center;
 	}
-
-	body {
+	body{
 		font-size: 16px;
 	}
-
-	.head_logo img {
+	.head_logo img{
 		max-width: 60px;
 		max-height: 60px;
 	}
-
-	.menu li a {
+	.menu li a{
 		font-size: 14px;
 	}
-
-	.main_btn {
+	.main_btn{
 		font-size: 10px;
 		max-height: 45px;
 		max-width: 130px;
 	}
-
-	.costumer_name {
+	.costumer_name{
 		font-size: 20px;
 
 	}
-
-	.costumer_card {
+	.costumer_card{
 		max-width: 300px;
 	}
-
-	.costumer_review {
+	.costumer_review{
 		font-size: 14px;
 	}
-
-	.costumer_status {
+	.costumer_status{
 		font-size: 12px;
 	}
-
-	.plus_left img {
+	.plus_left img{
 		width: 430px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-
-	.plus_right {
+	.plus_right{
 		max-width: 400px;
 		justify-content: center;
 	}
-
-	.plus_tit {
+	.plus_tit{
 		margin-bottom: 20px;
 	}
-
-	.advan_card {
+	.advan_card{
 		padding: 2px;
 	}
-
-	.services_cards {
+	.services_cards{
 		justify-content: center;
 		gap: 25px;
 	}
-
-	.wrap {
+	.wrap{
 		justify-content: center;
 	}
-
-	.header_btn {
-		display: none;
+	.header_btn{
+		display: block;
 	}
+	@media (max-width: 1100px) {
+		.header_btn {
+			display: none;
+		}
+	}
+	
 
 }
-
-@media screen and (max-width: 540px) {
-	.container{
-	  max-width: 420px;
-	}
-  
-	.advan_cards {
-	  flex-direction: column;
-	  align-items: center;
-	}
-  
-	.advan_card {
-	  margin-bottom: 30px;
-	}
-  
-	.advan_ic {
-	  max-width: 160px;
-	  height: 160px;
-	}
-  
-	.advan_text {
-	  font-size: 14px;
-	}
-	.plus_left img {
-	  width: 350px;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	}
-	.plus_left {
-	  flex: 0; 
-	  padding: 0;
-	}
-	/* .plus_card_txt{
-  
-	} */
-	.plus_card_port{
-	  max-width: 230px;
-	  font-size: 12px;
-	}
-	.advan_ic {
-	  max-width: 100px;
-	  height: 100px;
-	}
-	.slick-prev:before, .slick-next:before {
-	  font-family: 'slick';
-	  font-size: 20px;
-	  line-height: 1;
-	  opacity: .75;
-	  color: rgb(0, 0, 0);
-	  -webkit-font-smoothing: antialiased;
-	  -moz-osx-font-smoothing: grayscale;
-	}
-  }
-
 @media screen and (max-width: 990px) {
-	.container {
+	.container{
 		max-width: 750px;
 	}
-
-	.costumer_card {
+	.costumer_card{
 		max-width: 230px;
 	}
-
+	
 }
-
 @media screen and (max-width: 780px) {
-	.container {
+	.container{
 		max-width: 510px;
 	}
-
-	body {
+	body{
 		font-size: 18px;
 	}
-
-	.main_tit {
+	.main_tit{
 		font-size: 35px;
 	}
-
-	.plus_tit {
+	.plus_tit{
 		font-size: 25px;
 	}
-
-	.sec_tit {
+	.sec_tit{
 		font-size: 30px;
 	}
-
-	.costumer_cards {
+	.costumer_cards{
 		justify-content: center;
 	}
-
-	.costumer_card {
+	.costumer_card{
 		max-width: 350px;
 		margin-bottom: 30px;
 	}
-
-	.services_cards {
+	.services_cards{
 		justify-content: center;
 	}
-
-	.plus_card_port {
-		padding: 20px;
+	.plus_card_port{
+		padding: 20px ;
 	}
 }
-
 @media screen and (max-width: 540px) {
-	.container {
+	.container{
 		max-width: 420px;
 	}
 
@@ -204,54 +128,59 @@
 	.advan_text {
 		font-size: 14px;
 	}
-
 	.plus_left img {
 		width: 350px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-
 	.plus_left {
-		flex: 0;
+		flex: 0; 
 		padding: 0;
 	}
-
 	/* .plus_card_txt{
 
 	} */
-	.plus_card_port {
+	.plus_card_port{
 		max-width: 230px;
 		font-size: 12px;
 	}
-
 	.advan_ic {
 		max-width: 100px;
 		height: 100px;
 	}
+	.slick-prev:before, .slick-next:before {
+		font-family: 'slick';
+		font-size: 20px;
+		line-height: 1;
+		opacity: .75;
+		color: rgb(0, 0, 0);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	.main_btn {
+		font-size: 8px;
+		line-height: 15px;
+		max-height: 35px;
+		max-width: 100px;
+	}
 }
-
 @media screen and (max-width: 450px) {
-	.container {
+	.container{
 		max-width: 100%;
 	}
-
 	.plus_left {
-		flex: 0;
+		flex: 0; 
 		padding: 0;
 	}
-
-	.slick-prev:before {
-		display: none;
+	.plus-wrap{
+		font-size: 15px;
 	}
 
-	.slick-next:before {
-		display: none;
-	}
-
-	.slide{
-		margin-right: 70px;
-	}
+.slick-prev:before{
+	display: none;
 }
-
-
+.slick-next:before{
+	display: none;
+}
+}

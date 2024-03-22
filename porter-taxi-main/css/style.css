@@ -255,6 +255,9 @@ li a:after {
 	transition: width 0.3s ease-out;
 	/*задаём время анимации*/
 }
+.mobile_btn{
+	display: none;
+}
 
 @media (max-width: 1100px) {
 	.menu-button-container {
@@ -263,10 +266,7 @@ li a:after {
 
 	.header_btn {
 		display: none;
-	}}
-
-	
-
+	}
 
 
 	.menu {
@@ -329,7 +329,10 @@ li a:after {
 		background-color: #f1c513;
 		height: 1.5px;
 	}
-
+	.mobile_btn{
+		display: block;
+	}
+}
 
 /* header */
 header {
@@ -401,7 +404,7 @@ li a:focus:after {
 	text-align: center;
 	font-size: 14px;
 	font-weight: 700;
-	line-height: 24px;
+	line-height: 20px;
 	/* padding: 12px 24px; */
 	max-height: 55px;
 	background: none;
@@ -552,14 +555,25 @@ li a:focus:after {
 .plus_card_port:hover {
 	transform: scale(1.1);
 }
+.plus-wrap{
+justify-content: center;
 
+}
+.given{
+	text-align: end;
+}
+
+.plus_number{
+	padding-left: 5px;
+	text-align: start;
+}
 /* costumer  */
 .costumers {
 	background: #f9f9f7;
 }
 
 .costumer_card__1 .costumer_ic {
-	background-image: url(../img/icons/service_ic1.jpg);
+	background-image: url(../img/icons/costumer_ic_1.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -567,7 +581,7 @@ li a:focus:after {
 
 
 .costumer_card__2 .costumer_ic {
-	background-image: url(../img/icons/service_ic2.jpg);
+	background-image: url(../img/icons/costumer_ic_2.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -575,7 +589,7 @@ li a:focus:after {
 
 
 .costumer_card__3 .costumer_ic {
-	background-image: url(../img/icons/service_ic3.jpg);
+	background-image: url(../img/icons/costumer_ic_3.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -895,39 +909,39 @@ li a:focus:after {
 footer {
 	background: #3b3b3b;
 	/* height: 360px; */
-  }
-  
-  .footer_tit {
+}
+
+.footer_tit {
 	color: #fdc10b;
-  
-  }
-  
-  .footer_up {
+
+}
+
+.footer_up {
 	/* padding: 20px 0; */
 	text-align: center;
 	flex-direction: column;
 	margin: 0;
-  }
-  
-  .footer_logo img {
+}
+
+.footer_logo img {
 	max-width: 125px;
 	max-height: 125px;
-  
-  }
-  
-  /* .footer_icons{
+
+}
+
+/* .footer_icons{
 	padding-bottom: 30px;
 	max-width: 400px;
 	
   } */
-  .footer_icons {
+.footer_icons {
 	padding-bottom: 30px;
 	justify-content: center;
 	gap: 30px;
-	
-  }
-  
-  .footer_ic {
+
+}
+
+.footer_ic {
 	width: 40px;
 	height: 40px;
 	color: #000;
@@ -936,67 +950,68 @@ footer {
 	border-radius: 10px;
 	background-color: #f1c513;
 	transition: 0.5s;
-  }
-  
+}
 
-  .footer_first_ic {
+
+.footer_first_ic {
 	background-image: url(../img/icons/footer_call.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
-  }
-  
-  .footer_second_ic {
+}
+
+.footer_second_ic {
 	background-image: url(../img/icons/footer_tg.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
-  }
-  
-  .footer_third_ic {
+}
+
+.footer_third_ic {
 	background-image: url(../img/icons/footer_instagram.svg);
 	background-size: 50px;
 	background-repeat: no-repeat;
 	background-position: center;
-  }
+}
 
-  .footer_four_ic{
-	background: url(/img/icons/footer_whatsapp.svg);
+.footer_four_ic {
+	background: url(../img/icons/footer_whatsapp.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #f1c513;
-	}
+}
 
 
-  .footer_ic:hover {
+.footer_ic:hover {
 	background-color: #000;
-  }
-  
-  .footer_second_ic:hover {
+}
+
+.footer_second_ic:hover {
 	background-image: url(../img/icons/footer_tg-yellow.svg);
 	background-size: 22px;
-  }
-  
-  .footer_first_ic:hover {
+}
+
+.footer_first_ic:hover {
 	background-image: url(../img/icons/footer_call-yellow.svg);
 	background-size: 25px;
-  }
-  
-  .footer_third_ic:hover {
+}
+
+.footer_third_ic:hover {
 	background-image: url(../img/icons/footer_insta-yellow.svg);
 	background-size: 25px;
 	background-repeat: no-repeat;
 	background-position: center;
-  }
+}
 
-.footer_four_ic:hover{
+.footer_four_ic:hover {
 	background: url(../img/icons/footer_what-yellow.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #000;
-	}
+}
+
 /* gallery */
 
 .slider {
@@ -1005,8 +1020,16 @@ footer {
 	flex-wrap: nowrap;
 
 }
-
+.slide{
+	padding-right: 20px;
+}
 .slide img {
+	/* width: 400px; */
+	/* border-radius: 20px;
+	padding-right: 20px; */
 	flex: 0 0 300px;
 }
 
+.ser_img {
+	align-items: center;
+}
